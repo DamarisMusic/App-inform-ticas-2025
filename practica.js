@@ -1,8 +1,7 @@
-alert('¿Qué propósitos tenes este año?')
-
-let terminarEstudio = 'que pensas estudiar el próximo año'
 
 
-if {
+let añoNacimiento = 2009
 
-}
+let añoActual = 2025
+
+alert('Mi edad es' + añoActual - añoNacimiento)
