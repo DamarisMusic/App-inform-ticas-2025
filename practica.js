@@ -12,3 +12,12 @@ if (edad >= 17){
 }else{
     alert("no podes ingresar, lo siento")
 }
+
+let lluvia = prompt('¿Está lloviendio')
+let nublado = prompt('¿Está nublado?')
+
+if((lluvia == 'si')&&(nublado == 'si')){
+    alert('No puedo ir a la plaza lo siento mucho')
+}else{
+    alert('¿Tomamos unos mates?')
+}
