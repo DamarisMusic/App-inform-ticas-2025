@@ -35,19 +35,21 @@ console.log(estudiante.nombre + ' ' + estudiante.apellido)
 
 //para poner varios objetos se van separando con coma y se are con llaves
 //ej:
-let estudiante = {
-    nombre: 'Damaris',
+let estudiante = [{
+    nombre: 'Damaris',          //esta propiedad ocupa la posicion 0
     apellido: 'Villegas',
     dni: 49333734,
-    direccion: nose
+    direccion: nose,
+    notaExamen: 10
 },
 {
-    nombre: 'Mica',
+    nombre: 'Mica',             //esta ocupa la posicion 1, y asi sucesivamente
     apellido: 'Cordoba',
     dni: 29488894,
-    direccion: nose
+    direccion: nose,
+    notaExamen: 10
 }
-
+]
 //para mostrar los apellidos en la consola y o tener q escribir todos los datos usamos for
 for (let index = 0; index < estudiantes.length; index++) {
     console.log(estudiantes[index].apellido + ' ' + estudiantes[index].nombre)
@@ -56,4 +58,37 @@ for (let index = 0; index < estudiantes.length; index++) {
  //si quiero quee la consola busque un dato pongo:
  estudiantes[1].apellido
 
+//30/07/25
 
+let estudiantes = [{
+    nombre: 'Matías',
+    apellido: 'Rosello',
+    edad: 16,
+    notaExamen: 10
+},{
+    nombre: 'Antonella',
+    apellido: 'Lattandi',
+    edad: 16,
+    notaExamen: 7
+},{
+    nombre: 'Agustín',
+    apellido: 'Ávila',
+    edad: 16,
+    notaExamen: 1
+},
+{
+    nombre: 'Jerónimo',
+    apellido: 'Orfila',
+    edad: 16,
+    notaExamen: 9
+},{
+    nombre: 'Jazmín',
+    apellido: 'Rodriguez',
+    edad: 16,
+    notaExamen: 7
+}]
+
+for (let indice = 0; indice < estudiantes.length; indice++) {
+    console.log(estudiantes[0].apellido + ' ' + estudiantes[0].nombre + ' ' + estudiantes[0].notaExamen)
+    
+}
