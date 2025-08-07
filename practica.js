@@ -92,3 +92,13 @@ for (let indice = 0; indice < estudiantes.length; indice++) {
     console.log(estudiantes[0].apellido + ' ' + estudiantes[0].nombre + ' ' + estudiantes[0].notaExamen)
     
 }
+
+//07/08/2025 vemos ejercicios del examen
+let notas [6.5, 3, 4, 7, 10, 6, 6, 5, 4, 2, 2, 8, 9]
+let cantidadNotas = notas.length
+
+let sumaNotas = 0
+for (let i = 0; i < notas.length; i++) {
+    
+    
+}
