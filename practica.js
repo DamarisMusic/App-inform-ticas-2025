@@ -100,14 +100,16 @@ let imagen = document.querySelector('#imagen')
 let boton = document.querySelector('#boton')
 
 boton.onclick = function(){
-    fetch(' https://pokeapi.co/api/v2/pokemon/ditto')
+    fetch('https://pokeapi.co/api/V2/pokemon-form/110')
 
-    .then{respuesta => respuesta.json()}
+    .then(respuesta => respuesta.json())
 
-    .then[datos =>(
+    .then(datos => {
         console.log(datos)
 
-        titulo.textContent = datos.name
+        titulo.textContent = datos.name + '#' + datos.id
         imagen.src = datos.sprites.front_shiny
-    
-})
+    })
+}
+
+//fetch(' https://pokeapi.co/api/v2/pokemon/ditto')
