@@ -113,3 +113,10 @@ boton.onclick = function(){
 }
 
 //fetch(' https://pokeapi.co/api/v2/pokemon/ditto')
+fetch('https://pokeapi.co/api/v2/pokemon-form/151/')
+
+.then(respuesta => respuesta.json())
+.then(datos => {
+    imagen.src = datos.sprites.front_shiny
+
+})
