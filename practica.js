@@ -120,3 +120,15 @@ fetch('https://pokeapi.co/api/v2/pokemon-form/151/')
     imagen.src = datos.sprites.front_shiny
 
 })
+
+//27/08/2025
+fetch('https://pokeapi.co/api/v2/pokemon?-limit-5')
+
+.then(respuesta => respuesta.json())
+.then(datos => {
+    console.log(datos.results)
+    for (let index = 0; index < datos.results.length; index++) {
+        const element = array[index];
+        console.log(datos.results[i].name)
+    }
+})
