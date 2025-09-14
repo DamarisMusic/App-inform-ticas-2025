@@ -93,3 +93,62 @@ for (let indice = 0; indice < estudiantes2.length; indice++) {
     
 }
 
+<<<<<<< HEAD
+=======
+//07/08/2025 vemos ejercicios del examen
+
+let titulo = document.querySelector('#titulo')
+let imagen = document.querySelector('#imagen')
+let boton = document.querySelector('#boton')
+
+boton.onclick = function(){
+    fetch('https://pokeapi.co/api/V2/pokemon-form/110')
+
+    .then(respuesta => respuesta.json())
+
+    .then(datos => {
+        console.log(datos)
+
+        titulo.textContent = datos.name + '#' + datos.id
+        imagen.src = datos.sprites.front_shiny
+    })
+}
+
+//fetch(' https://pokeapi.co/api/v2/pokemon/ditto')
+fetch('https://pokeapi.co/api/v2/pokemon-form/151/')
+
+.then(respuesta => respuesta.json())
+.then(datos => {
+    imagen.src = datos.sprites.front_shiny
+
+})
+
+//27/08/2025
+fetch('https://pokeapi.co/api/v2/pokemon?-limit-5')
+
+.then(respuesta => respuesta.json())
+.then(datos => {
+    console.log(datos.results)
+    for (let index = 0; index < datos.results.length; index++) {
+        const element = array[index];
+        console.log(datos.results[i].name)
+    }
+})
+
+//Mas practica de apis 03/09/2025 por ej: vamos a la pag de la nasa: apod.nasa.gov/? luego vamos a search y ponemos apod. Enlace que podemos utilizar para tomar datos de la api con fetch: api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+let img = document.querySelector('img')
+fetch('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2008-08-10') //el &date=año-fecha-mes es en este caso para pedir una imagen de un año y fecha determinada, es decir, una imagen que se haya cargado en esa fecha. Count es para pedir un numero de objetos
+
+.then(respuesta => respuesta.json())
+.then(datos =>{
+    console.log(datos)
+    img.src = datos.url
+    for (let index = 0; index < array.length; index++) {
+        contenedor.innerHTML += '<img src="' +datos[i].url+'" alt"">'
+        
+    }
+})
+// en la pagina de api nasa podemos ir a generate api key, ponemos los datos y nos registramos
+
+>>>>>>> ac418a8a3add2658fb8336cc282b6c5a51aa8ba9
