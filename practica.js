@@ -1,5 +1,5 @@
 
-/*
+
 let añoNacimiento = 2009
 
 let añoActual = 2025
@@ -21,7 +21,7 @@ if((lluvia == 'si')&&(nublado == 'si')){
 }else{
     alert('¿Tomamos unos mates?')
 }
-*/
+
 //clase 30/08
 //Objects
 let estudiante = {
@@ -35,7 +35,7 @@ console.log(estudiante.nombre + ' ' + estudiante.apellido)
 
 //para poner varios objetos se van separando con coma y se are con llaves
 //ej:
-let estudiante = [{
+let estudiantes = [{
     nombre: 'Damaris',          //esta propiedad ocupa la posicion 0
     apellido: 'Villegas',
     dni: 49333734,
@@ -60,7 +60,7 @@ for (let index = 0; index < estudiantes.length; index++) {
 
 //30/07/25
 
-let estudiantes = [{
+let estudiantes2 = [{
     nombre: 'Matías',
     apellido: 'Rosello',
     edad: 16,
@@ -88,7 +88,8 @@ let estudiantes = [{
     notaExamen: 7
 }]
 
-for (let indice = 0; indice < estudiantes.length; indice++) {
+for (let indice = 0; indice < estudiantes2.length; indice++) {
     console.log(estudiantes[0].apellido + ' ' + estudiantes[0].nombre + ' ' + estudiantes[0].notaExamen)
     
 }
+
